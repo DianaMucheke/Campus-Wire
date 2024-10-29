@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="chat-box.css"> 
+    
+</head>
+<body>
+
+<div class="container">
+    <!-- CampusWire existing content here -->
+    <h1>CampusWire</h1>
+    <p>Explore and Discover more on our page</p>
+</div>
+
+<!-- Chat Box -->
+<div class="chat-box" id="chatBox">
+    <div class="chat-header" onclick="toggleChat()">
+        Chat with Us
+    </div>
+    <div class="chat-content">
+        <p>We'd love to hear your thoughts!</p>
+    </div>
+    <div class="chat-footer">
+        <p><a href="feedback.html">Visit Feedback Page</a></p> 
+    </div>
+</div>
+
+<script>
+    
+    function toggleChat() {
+        const chatBox = document.getElementById('chatBox');
+        if (chatBox.style.display === 'none' || chatBox.style.display === '') {
+            chatBox.style.display = 'block'; 
+        } else {
+            chatBox.style.display = 'none'; 
+        }
+    }
+
+    
+    window.onload = function() {
+        setTimeout(toggleChat, 1000); 
+    };
+</script>
+
+</body>
+</html>

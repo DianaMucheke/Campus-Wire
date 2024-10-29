@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+
+    <link rel="stylesheet" type="text/css" href="feedback.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h1>We Value Your Feedback!</h1>
+    <form action="/submit-feedback" method="POST">
+        <label for="name">Name (optional):</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email (optional):</label>
+        <input type="email" id="email" name="email">
+
+        <label for="eventType">Type of Activity:</label>
+        <select id="eventType" name="eventType" required>
+            <option value="">Select an option...</option>
+            <option value="club">Club</option>
+            <option value="sport">Sport</option>
+            <option value="event">Event</option>
+            
+        </select>
+
+        <label for="event">Activity Attended:</label>
+        <input type="text" id="event" name="event" required>
+
+        <label for="rating">Rate Us:</label>
+        <select id="rating" name="rating" required>
+            <option value="">Select a rating...</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Poor</option>
+            <option value="1">1 - Very Poor</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="5" required></textarea>
+
+        <input type="submit" value="Submit Feedback">
+
+
+    </form>
+</div>
+
+</body>
+</html>
